@@ -1,5 +1,5 @@
 
-![Logo](https://i.ibb.co/m5rtcJs/image-removebg-preview.png)
+![Logo](https://i.ibb.co/GPSq0n3/output-onlinepngtools-1.png)
 
 # Kumpulan Rangkuman Dasar Bahasa Pemrograman
 
