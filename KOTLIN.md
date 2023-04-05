@@ -389,7 +389,7 @@ Perintah perulangan merupakan sebuah perintah, yang tujuannya akan mengulang blo
 
 ![For concept looping](https://problemsolvingwithpython.com/09-Loops/images/flow_chart_of_program_that_contains_a_for_loop.png)
 
-### Code program
+#### Code program
 
 ```kotlin
 for (item in collection) {
@@ -410,5 +410,73 @@ for (item in starting downTo ending step stepping) {
 //contoh penggunaan
 for (i in 6 downTo 0 step 2) {
     println(i)
+}
+```
+
+## While Loop
+
+![while Flowchart](https://uploads-ssl.webflow.com/6184b461a39ff1011f8c0582/623c0c66fad507a80764a3f5_while-loop-flowchart.png)
+
+#### Code Program
+
+```kotlin
+while (condition) {
+    // blok kode yang dieksekusi jika condition bernilai true
+}
+
+//Contoh penggunaan
+
+// buat variabel baru dengan nama g
+// isi variabel g dengan nilai 0
+var g = 0
+
+// mulai perintah perulangan while
+// cek, apakah nilai g < 5? 
+while (g < 5) {
+
+  // blok ini dijalankan, selama nilai g < 5 = true
+  println(g)
+
+  // perubahan nilai g di setiap perulangan
+  g++
+}
+```
+
+## Do While Loop
+
+![Do while flowchart](https://2.bp.blogspot.com/-Ejqpw2aVATE/XGYHCwNy83I/AAAAAAAACH8/0ax3VKgaj6IrSNogkBd5WFLOrRT5TLQigCLcBGAs/s640/ilearning_logo.png)
+
+#### Perbedaan While dan Do-While
+
+Perintah perulangan do-while sebenarnya tidak berbeda jauh dengan perintah perulangan while. Satu-satunya perbedaan adalah, di perulangan do-while setidaknya blok kode program di dalam perulangan selalu dilakukan minimal 1x.  
+
+Perhatikan rumus berikut ini:
+
+```kotlin
+do { 
+    
+    // blok yang dieksekusi, minimal 1x
+    
+} while (conditional)
+```
+
+#### Contoh penggunaan do While
+
+```kotlin
+fun cekKoneksiJaringan() { 
+    // kode program lengkap tidak ditampilkan
+
+    return kondisiJaringan;
+}
+
+fun main(args: Array<String>) {
+    do { 
+         var koneksi = cekKoneksiJaringan()
+         if (koneksi) {
+             // lakukan sesuai jika koneksi aktif
+         } else {
+             // lakukan sesuai jika koneksi tidak aktif
+         }
+    } while (!cekKoneksiJaringan())
 }
 ```
