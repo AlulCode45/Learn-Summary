@@ -5,8 +5,6 @@
 
 Repository ini di tujukan untuk menyimpan rangkuman hasil belajar dan di bagikan secara umum dan open source
 ## Kontribusi
-
-Contributions are always welcome!
 Kontribusi selalu terbuka!
 
 lihat `contributing.md` untuk memulai kontribusi
