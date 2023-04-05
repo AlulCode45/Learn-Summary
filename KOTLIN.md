@@ -215,3 +215,93 @@ namaFungsi()
 // Memanggil fungsi dan parameter
 namaFungsi(parameter)
 ```
+
+# Percabangan
+
+## Percabangan Menggunakan if
+
+![If Flowchart](https://www.programtopia.net/wp-content/uploads/2021/01/if_0.png)
+
+#### Code if
+
+```kotlin
+if(condition){
+    //statement
+}
+
+//Contoh
+fun main(args: Array<String>) {
+    var a = 20
+    var b = 18
+    
+    if(a>b){
+        println("$a lebih besar dari $b")
+    }
+}
+```
+
+## Percabangan Menggunakan if - else
+
+![If Else Flowchart](https://www.programtopia.net/wp-content/uploads/2021/01/ifelse_0.png)
+
+#### Code if - else
+
+```kotlin
+if(condition){
+    // statement jika true
+}else{
+    // statement jika false
+}
+
+//Contoh
+fun main(args: Array<String>) {
+    var a = 20
+    var b = 18
+    
+    if(a>b){
+        println("$a lebih besar dari $b")
+    }else{
+        println("$a lebih kecil dari $b")
+    }
+}
+```
+
+## Percabangan Menggunakan if - else if - else
+
+![If Else If Flowchart](https://www.tutlane.com/images/swift/swift-if-else-if-statement-algorithm-diagram.png)
+
+#### Code if - else if - else
+
+```kotlin
+if (kondisi1) {
+
+  // blok kode program yang dieksekusi jika kondisi1 bernilai true
+
+} else if (kondisi2) {
+
+  // blok kode program yang dieksekusi jika kondisi1 bernilai false and kondisi2 bernilai true
+
+} else {
+
+  // blok kode program yang dieksekusi jika kondisi1 bernilai false dan kondisi2 juga bernilai false
+
+}
+
+//Contoh
+fun main(args: Array<String>) {
+    val jam = 22
+    if (time < 10) {
+        println("Selamat pagi")
+    } else if (jam < 14) {
+        println("Selamat siang")
+    } else if (jam < 18) {
+        println("Selamat sore")
+    } else {
+        println("Selamat malam")
+    }
+}
+```
+
+## Percabangan When / Switch Case
+
+![When FLowchart](https://uploads-ssl.webflow.com/6184b461a39ff1011f8c0582/624bffae64d6b60b5e49105e_Switch%20Case%20Flowchart.png)
