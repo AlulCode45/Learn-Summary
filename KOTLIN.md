@@ -305,3 +305,110 @@ fun main(args: Array<String>) {
 ## Percabangan When / Switch Case
 
 ![When FLowchart](https://uploads-ssl.webflow.com/6184b461a39ff1011f8c0582/624bffae64d6b60b5e49105e_Switch%20Case%20Flowchart.png)
+
+#### Code When
+
+```kotlin
+// Code dasar when
+val varName = when (varSelected) {
+  valueCompare1 -> "Results1"
+  valueCompare2 -> "Results2"
+  else -> "Else Results"
+}
+
+// Contoh penggunaan
+val hari = 4
+val hasil = when (hari) {
+  1 -> "Senin"
+  2 -> "Selasa"
+  3 -> "Rabu"
+  4 -> "Kamis"
+  5 -> "Jumat"
+  6 -> "Sabtu"
+  7 -> "Minggu"
+  else -> "Tidak valid"
+}
+println(hasil)
+
+// Blok Perintah pada When
+when (variable) {
+    state1 -> {
+        // blok yang dieksekusi jika variabel == state1
+    }
+    state2 -> { 
+        // blok yang dieksekusi jika variabel == state2
+    } 
+    else -> {
+        // blok yang dieksekusi jika semua kondisi false
+    }
+}
+//Contoh Penggunaan Blok Perintah
+val hari = 4
+when (hari) {
+    1 -> {
+        println("Nilai hari = 1")
+        println("Maka, hari = Senin")
+    }
+    2 -> { 
+        println("Nilai hari = 2")
+        println("Maka, hari = Selasa")
+    } 
+    3 -> { 
+        println("Nilai hari = 3")
+        println("Maka, hari = Rabu")
+    } 
+    4 -> { 
+        println("Nilai hari = 4")
+        println("Maka, hari = Kamis")
+    } 
+    5 -> { 
+        println("Nilai hari = 5")
+        println("Maka, hari = Jumat")
+    } 
+    6 -> { 
+        println("Nilai hari = 6")
+        println("Maka, hari = Sabtu")
+    } 
+    7 -> { 
+        println("Nilai hari = 7")
+        println("Maka, hari = Minggu")
+    } 
+    else -> {
+        println("Nilai hari = $hari")
+        println("Maka, hari = tidak valid")
+    }
+}
+
+```
+
+# Perulangan
+
+Perintah perulangan merupakan sebuah perintah, yang tujuannya akan mengulang blok baris perintah tertentu jika kondisi pengecekan bernilai benar (true). Di dalam bahasa pemrograman, biasanya terdapat 2 macam perulangan, yaitu: for dan while.  
+
+## For Loop
+
+![For concept looping](https://problemsolvingwithpython.com/09-Loops/images/flow_chart_of_program_that_contains_a_for_loop.png)
+
+### Code program
+
+```kotlin
+for (item in collection) {
+    // blok perintah yang diulang
+}
+
+//contoh penggunaan
+fun main(args: Array<String>) {
+    for (i in 1..3) {
+      prinln(i)
+    }
+}
+
+//Rumus Perintah for DownTo
+for (item in starting downTo ending step stepping) {
+    // blok yang dipanggil ketika berulang
+}
+//contoh penggunaan
+for (i in 6 downTo 0 step 2) {
+    println(i)
+}
+```
