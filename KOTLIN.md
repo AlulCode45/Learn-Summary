@@ -73,3 +73,145 @@ Unit = mirip dengan void
 (/) Pembagian
 (%) Modulus
 ```
+
+### 2) Operator assignment
+
+```kotlin
+val g = 10
+val g -= 1
+val g += 1
+val g /= 2
+val g *= 2
+val g %= 2
+```
+
+### 3) Operator Unary,Increment & Decrement
+
+```text
++a
+-a
+!a
+a++
+a--
+```
+
+### 4) Operator Perbandingan dan Persamaan ( Comparison & Equality )
+
+```text
+(>) Lebih besar dari
+(<) Lebih kecil dari
+(>=) Lebih besar sama dengan
+(<=) Lebih kecil sama dengan
+(==) Sama dengan
+(!=) tidak sama dengan
+```
+
+### 5) Operator Ligka ( Logical )
+
+```text
+( || ) Atau ( or )
+( && ) Dan ( and )
+```
+
+### 6) Operator IN
+
+Operator in digunakan untuk memerikasa apakah suatu objek termasuk dalam koleksi
+
+```text
+( in ) => ex: a in b
+( !in ) => ex : a !in b
+```
+
+### 7) Operator bitwise
+
+```text
+(shl) = <<
+(shr) = >>
+(ushr) = >>>
+(and) = &
+(or) = or
+(xor) = xor
+(inv) = inv
+```
+
+## Array
+
+### Contoh penggunaan Array
+
+```kotlin
+val mobil = arrayOf("toyota","honda","tesla")
+```
+
+### Cara pemanggilan Array
+
+```kotlin
+println(mobil[1])
+```
+
+### Cara Mengakses Semua Elemen Array
+
+```kotlin
+val mobil = arrayOf("toyota","honda","tesla")
+for (m in mobil){
+  println(m)
+}
+```
+
+### Mengubah Elemen Array
+
+```kotlin
+val mobil = arrayOf("Toyota","Honda","Tesla")
+mobil[1] = "Mazda"
+```
+
+### Mendapatkan Ukuran Array
+
+```kotlin
+val mobil = arrayOf("Toyota","Honda","Tesla")
+println(mobil.size) //Hasil = 3
+```
+
+### Mengecek Elemen Array
+
+```kotlin
+val mobil = arrayOf("Toyota","Honda","Tesla")
+if("Tesla" in mobil){
+  //True
+}else{
+  //False
+}
+```
+
+## Fungsi
+
+Fungsi / Method / Function adalah blok kode program yang dirancang untuk mengerjakan tugas tertentu  
+
+### Keuntungan Menggunakan Fungsi
+
+- Mengurangi pengulangan kode
+- Menghemat baris kode
+- Membuat program lebih rapi
+- Mudah dibaca
+- Mempercepat coding
+
+### Struktur kode fungsi
+
+```kotlin
+//Fungsi tanpa parameter  
+fun namaFungsi(){
+}
+
+//Fungsi berparameter  
+fun namaFungsi(namaParam: TipeData = defaultValue){
+}
+```
+
+### Pemanggilan kode fungsi
+
+```kotlin
+// Memanggil fungsi tanpa param
+namaFungsi()
+
+// Memanggil fungsi dan parameter
+namaFungsi(parameter)
+```
